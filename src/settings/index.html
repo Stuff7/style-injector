@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Style Injector</title>
+</head>
+<body>
+  <h1>Style Injector</h1>
+
+  <label for="staticServer">
+    Static server: [<span id="staticServerUrl"></span>]
+  </label>
+  <input id="staticServer">
+  <br>
+  <h2>OR</h2>
+  <br>
+  <input type="file" id="folderPicker" webkitdirectory directory multiple hidden>
+  <button id="folderPickerBtn">Select a Folder</button>
+  <p id="selectedFolder"></p>
+</html>

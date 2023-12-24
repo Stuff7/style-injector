@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Style Injector",
+  "version": "1.0",
+  "description": "Injects styles to sites",
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "src/icons/icon16.png",
+      "32": "src/icons/icon32.png"
+    },
+    "default_title": "Style Injector"
+  },
+  "options_ui": {
+    "page": "src/settings/index.html"
+  },
+  "icons": {
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "style-injector@stuff7.github.io"
+    }
+  }
+}

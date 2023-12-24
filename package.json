@@ -1,0 +1,16 @@
+{
+  "name": "style-injector",
+  "version": "1.0",
+  "description": "Injects styles to sites",
+  "main": "src/script.js",
+  "author": "Armando",
+  "license": "MIT",
+  "scripts": {
+    "build": "web-ext build --artifacts-dir build --overwrite-dest --filename style-injector.xpi"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "*",
+    "eslint": "*",
+    "eslint-plugin-jsdoc": "*"
+  }
+}
